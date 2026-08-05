@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ECE5DD;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom WhatsApp-style scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ECE5DD;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #075E54;
+  border-radius: 10px;
+}
+
+/* Animation for pulse effect */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
